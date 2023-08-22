@@ -26,6 +26,6 @@ Si deseas aprender más sobre patrones de diseño, aquí tienes algunos recursos
 
 ## Créditos
 
-La información e imágenes que ven en este repo es gracias a mi formación autodidacta usando como referencia el libro **`Sumérgete en los PATRONES de DISEÑO`** del autor Alexander Shvets.
+La información e imágenes que ven en este repositorio es gracias a mi formación autodidacta usando como referencia el libro **`Sumérgete en los PATRONES de DISEÑO`** del autor Alexander Shvets.
 
 ¡Gracias por visitar este repositorio y explorar los patrones de diseño!
