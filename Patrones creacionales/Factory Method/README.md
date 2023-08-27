@@ -8,7 +8,11 @@ Supongamos que tenemos una empresa de logística que necesita gestionar el trans
 
 ### Clases y Interfaces
 
+El patrón Factory Method sugiere que, en lugar de llamar al operador `new` para construir objetos directamente, se invoque a un método fábrica especial. No te preocupes: los objetos se siguen creando a través del operador `new` , pero se invocan desde el método fábrica. Los objetos devueltos por el método fábrica a menudo se denominan productos.
+
 ![Diagrama UML sobre como quedaría FabricaTransportes y sus subclases](https://github.com/dannyj182/design-patterns/blob/main/Patrones%20creacionales/Factory%20Method/assets/mdImages/fm1.png?raw=true "Las subclases pueden alterar la clase de los objetos devueltos por el método fábrica")
+
+Las subclases pueden alterar la clase de los objetos devueltos por el método fábrica.
 
 1. **`FabricaTransportes` (interfaz):** Define la interfaz para las fábricas de transporte.
 
@@ -20,11 +24,15 @@ Nota: La imagen hace referencia a `Logistics` como una clase abstracta, también
 
 ![Diagrama UML sobre como quedaría la interfaz Transporte y las clases que la implementen](https://github.com/dannyj182/design-patterns/blob/main/Patrones%20creacionales/Factory%20Method/assets/mdImages/fm2.png?raw=true "Todos los productos deben seguir la misma interfaz")
 
+Todos los productos deben seguir la misma interfaz.
+
 4. **`Transporte` (interfaz):** Define la interfaz común para todos los tipos de transporte.
 
 5. **`Camion` (clase concreta):** Implementa la interfaz `Transporte` para representar un camión.
 
 6. **`Barco` (clase concreta):** Implementa la interfaz `Transporte` para representar un barco.
+
+Tanto la clase `Camion` como la clase `Barco` deben implementar la interfaz `Transporte`, que declara un método llamado `deliver`. Cada clase implementa este método de forma diferente: los camiones entregan su carga por tierra, mientras que los barcos lo hacen por mar. El método fábrica dentro de la clase `RoadLogistics` devuelve objetos de tipo camión, mientras que el método fábrica de la clase `SeaLogistics` devuelve barcos.
 
 ## Estructura
 
@@ -34,7 +42,7 @@ Nota: La imagen hace referencia a `Logistics` como una clase abstracta, también
 
 2. Los **`Productos Concretos`** son distintas implementaciones de la interfaz de producto.
 
-3. La clase **`Creadora`** declara el método fábrica que devuelve nuevos objetos de producto. Es importante que el tipo de retorno de este método coincida con la interfaz de producto.
+3. La clase **`Creadora`** declara el método fábrica que devuelve nuevos objetos de producto. Es importante que el tipo de retorno de este método coincida con la interfaz de producto. La clase **`Creadora`** puede ser una clase abstracta o una interfaz.
 
 4. Los **`Creadores Concretos`** sobrescriben el Factory Method base, de modo que devuelva un tipo diferente de producto.
 
