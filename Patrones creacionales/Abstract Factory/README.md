@@ -8,7 +8,7 @@ Exploremos cómo el patrón Abstract Factory se puede utilizar en un simulador d
 
 ### Clases y Interfaces
 
-Lo primero que sugiere el patrón Abstract Factory es que declaremos de forma explícita interfaces para cada producto diferente de la familia de productos (por ejemplo, silla, sofá o mesa). Después podemos hacer que todas las variantes de los productos sigan esas interfaces. Por ejemplo, todas las variantes de silla pueden implementar la interfaz Silla , así como todas las variantes de mesa pueden implementar la interfaz Mesa , y así sucesivamente.
+Lo primero que sugiere el patrón Abstract Factory es que declaremos de forma explícita interfaces para cada producto diferente de la familia de productos (por ejemplo, silla, sofá o mesa). Después podemos hacer que todas las variantes de los productos sigan esas interfaces. Por ejemplo, todas las variantes de silla pueden implementar la interfaz Silla, así como todas las variantes de mesa pueden implementar la interfaz Mesa, y así sucesivamente.
 
 ![Diagrama UML sobre como quedarían los Productos y sus clases concretas](https://github.com/dannyj182/design-patterns/blob/main/Patrones%20creacionales/Abstract%20Factory/assets/mdImages/af1.png?raw=true "Todas las variantes del mismo objeto deben moverse a una única jerarquía de clase.")
 
