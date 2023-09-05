@@ -10,6 +10,7 @@ Descripción y ejemplo de los patrones:
 
 - [Factory Method](https://github.com/dannyj182/design-patterns/tree/main/Patrones%20creacionales/Factory%20Method): proporciona una interfaz para crear objetos en una superclase, mientras permite a las subclases alterar el tipo de objetos que se crearán.
 - [Abstract Factory](https://github.com/dannyj182/design-patterns/tree/main/Patrones%20creacionales/Abstract%20Factory): permite producir familias de objetos relacionados sin especificar sus clases concretas.
+- [Builder](https://github.com/dannyj182/design-patterns/tree/main/Patrones%20creacionales/Builder): permite producir distintos tipos y representaciones de un objeto empleando el mismo código de construcción.
 
 ## Patrones Estructurales (Próximamente)
 
