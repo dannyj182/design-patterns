@@ -14,6 +14,12 @@ Es un patrón de diseño creacional que se utiliza para crear nuevos objetos dup
 
 ### Uso del Patrón Prototype
 
+En este ejemplo, el patrón Prototype nos permite producir copias exactas de objetos geométricos sin acoplar el código a sus clases.
+
+![Estructura del patrón](https://github.com/dannyj182/design-patterns/blob/main/Patrones%20creacionales/Prototype/assets/mdImages/p2.png?raw=true "Clonación de un grupo de objetos que pertenece a una jerarquía de clase.")
+
+Clonación de un grupo de objetos que pertenece a una jerarquía de clase.
+
 La clase abstracta **`Shape`** y las clases concretas (**`Circle`** y **`Rectangle`**) que la heredan las podemos escribir de la siguiente manera:
 
 ```java
@@ -106,7 +112,7 @@ public class Rectangle extends Shape {
 }
 ```
 
-Fíjate que las clases concretas (**`Circle`** y **`Rectangle`**) tienen dos constructores, el primero se usará para crear una nueva instancia y el segundo se utiliza para clonar el objeto. También se sobreescribe el método **`equals`** para comparar si dos objetos son clones.
+Observe que las clases concretas (**`Circle`** y **`Rectangle`**) tienen dos constructores, el primero se usará para crear una nueva instancia y el segundo se utiliza para clonar el objeto. También se sobreescribe el método **`equals`** para comparar si dos objetos poseen el mismo estado interno (son clones).
 
 En nuestro código principal, vamos a crear instancias de las clases **`Circle`** y **`Rectangle`**, las vamos a agregar a una lista, clonar los elementos de esa lista e incorporarlas en otra lista para comparar si las instancias originales y sus clones son iguales:
 
