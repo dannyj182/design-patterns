@@ -148,7 +148,7 @@ public class Main {
 }
 ```
 
-## Ventajas del Patrón Factory Method
+## Ventajas del Patrón Abstract Factory
 
 - **Flexibilidad:** Permite cambiar fácilmente el estilo de los muebles que se crean sin modificar el código existente.
 
