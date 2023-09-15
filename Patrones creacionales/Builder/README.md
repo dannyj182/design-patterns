@@ -247,7 +247,7 @@ public class Main {
 }
 ```
 
-## Ventajas del Patrón Factory Method
+## Ventajas del Patrón Builder
 
 - **Separación de la construcción de objetos complejos:** Separa el proceso de construcción de un objeto complejo de su representación final. Esto permite variar y personalizar la construcción del objeto sin modificar su estructura interna.
 
