@@ -19,8 +19,7 @@ public class Singleton {
     // La instancia única se almacena como una variable privada y estática.
     private static Singleton instancia;
 
-    // El constructor se hace privado para evitar la creación de instancias 
-    // desde fuera de la clase.
+    // El constructor se hace privado para evitar la creación de instancias desde fuera de la clase.
     private Singleton() {
         // Constructor privado.
     }
@@ -45,19 +44,16 @@ public class Main {
         // Obtener la instancia única de Singleton.
         Singleton instancia1 = Singleton.getInstancia();
 
-        // Intentar crear una nueva instancia, lo que no es posible debido al 
-        // constructor privado.
+        // Intentar crear una nueva instancia, lo que no es posible debido al constructor privado.
         // Singleton instancia2 = new Singleton(); // Esto dará un error de compilación.
 
         // Obtener la misma instancia nuevamente.
         Singleton instancia3 = Singleton.getInstancia();
 
         // Todas las instancias son iguales.
-        System.out.println("Las instancias son iguales? " + (instancia1 == instancia3)); 
-        // Devuelve true
+        System.out.println("Las instancias son iguales? " + (instancia1 == instancia3)); // Devuelve true
 
-        // También puedes usar el método toString() para comprobar
-        // que ambas variables apuntan a la misma referencia
+        // También puedes usar el método toString() para comprobar que ambas variables apuntan a la misma referencia
         System.out.println("Instancia 1: " + instancia1.toString());
         System.out.println("Instancia 3: " + instancia3.toString());
     }
