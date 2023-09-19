@@ -12,6 +12,7 @@ Descripción y ejemplo de los patrones:
 - [Abstract Factory](https://github.com/dannyj182/design-patterns/tree/main/Patrones%20creacionales/Abstract%20Factory): permite producir familias de objetos relacionados sin especificar sus clases concretas.
 - [Builder](https://github.com/dannyj182/design-patterns/tree/main/Patrones%20creacionales/Builder): permite producir distintos tipos y representaciones de un objeto empleando el mismo código de construcción.
 - [Prototype](https://github.com/dannyj182/design-patterns/tree/main/Patrones%20creacionales/Prototype): permite copiar objetos existentes sin que el código dependa de sus clases.
+- [Singleton](https://github.com/dannyj182/design-patterns/tree/main/Patrones%20creacionales/Singleton): permite asegurarnos de que una clase tenga una única instancia, a la vez que proporciona un punto de acceso global a dicha instancia.
 
 ## Patrones Estructurales (Próximamente)
 
